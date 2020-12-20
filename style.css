@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+body {
+  height: 100vh;
+  padding: 5px;
+  font-size: 20px;
+  transition: 0.3s ease;
+  font-family: "Libre Franklin", sans-serif;
+}
+.logo {
+  width: 100%;
+  padding: 30px;
+  display: grid;
+  place-items: center;
+  margin-top: 30px;
+}
+h2 {
+  color: hsl(0, 0%, 59%);
+  font-weight: 300;
+}
+h2 span {
+  font-weight: 900;
+  color: hsl(209, 33%, 12%);
+  font-weight: 600;
+}
+p {
+  margin-top: 5px;
+  font-size: 17px;
+  font-weight: 300;
+  color: hsl(209, 33%, 12%);
+}
+
+.subscribe {
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr auto;
+  gap: 10px;
+  transition: 0.3s;
+  margin-top: 30px;
+}
+input {
+  border-radius: 20px;
+  height: 50px;
+  font-size: 16px;
+  border: 1px solid hsl(223, 100%, 88%);
+  caret-color: springgreen;
+  color: hsl(223, 87%, 63%);
+}
+input:focus {
+  outline: transparent;
+  border-color: hsl(223, 87%, 63%);
+}
+::placeholder {
+  color: hsl(223, 87%, 63%);
+  opacity: 0.5; /* Firefox */
+}
+.error {
+  border-color: hsl(354, 100%, 66%);
+  color: hsl(354, 100%, 66%);
+}
+.error-message {
+  transform: scale(0);
+  color: hsl(354, 100%, 66%);
+  font-size: 12px;
+  transition: 0.1s;
+  display: none;
+}
+button {
+  cursor: pointer;
+  font-size: 18px;
+  border: none;
+  border-radius: 20px;
+  width: 100%;
+  height: 50px;
+  background: hsl(223, 87%, 63%);
+  color: white;
+  transition: 0.3s;
+  box-shadow: 4px 4px 24px hsla(208, 98%, 53%, 0.215);
+  outline-color: springgreen;
+  font-weight: 700;
+}
+button:hover {
+  filter: brightness(120%);
+  transform: scale(1.05);
+  box-shadow: 8px 8px 24px hsla(208, 98%, 53%, 0.315);
+}
+footer {
+  margin-top: 30px;
+}
+
+.illustration {
+  margin-top: 30px;
+  width: 100%;
+  padding: 20px;
+}
+
+.illustration img {
+  width: 100%;
+  height: 100%;
+}
+.cpy {
+  margin-top: 5px;
+  font-size: 12px;
+  color: hsl(0, 0%, 59%);
+}
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social div {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  display: grid;
+  place-items: center;
+  transition: 0.5s;
+
+  color: hsl(223, 87%, 63%);
+  margin: 0 5px;
+}
+.social div:hover {
+  color: white;
+  background: hsl(223, 87%, 63%);
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    padding: 5px 50px;
+  }
+  .logo {
+    margin-top: 10px;
+  }
+  .subscribe {
+    margin: 10px auto 0px;
+    width: 50%;
+    grid-template-columns: 60% auto;
+    grid-template-rows: 1fr auto;
+  }
+  .illustration {
+    width: 50%;
+    padding: 0px;
+    margin: 0px auto;
+  }
+  .error {
+    padding-left: 15px;
+    text-align: left;
+  }
+  .error-message {
+    grid-row: 2;
+  }
+  footer {
+    margin-top: 5px;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes slide-in-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes scale-up {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
