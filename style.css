@@ -72,7 +72,7 @@ input:focus {
   transform: scale(0);
   color: hsl(354, 100%, 66%);
   font-size: 12px;
-  transition: 0.1s;
+  transition: 0.5s;
   display: none;
 }
 button {
@@ -154,12 +154,11 @@ footer {
     padding: 0px;
     margin: 0px auto;
   }
-  .error {
-    padding-left: 15px;
-    text-align: left;
-  }
+
   .error-message {
     grid-row: 2;
+    padding-left: 15px;
+    text-align: left;
   }
   footer {
     margin-top: 5px;

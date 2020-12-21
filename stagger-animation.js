@@ -12,7 +12,6 @@ document
 setTimeout(() => {
   document.querySelector(".logo").style.animation = `slide-in 0.5s ease-in`;
   document.querySelector(".logo").style.opacity = 1;
-  console.log("1");
 }, 100);
 
 setTimeout(() => {
@@ -39,15 +38,16 @@ setTimeout(() => {
     ".illustration img"
   ).style.animation = `slide-in-bottom 0.5s ease`;
   document.querySelector(".illustration").style.opacity = 1;
-}, 900);
+}, 1200);
 
 setTimeout(() => {
   document.querySelectorAll(".social div").forEach((div, i) => {
     div.style.animation = `slide-in-bottom 0.5s ease-in ${(i + 1) * 100}ms`;
   });
-}, 1000);
+}, 1400);
+
 setTimeout(() => {
   document.querySelectorAll(".social div").forEach((div, i) => {
     div.style.opacity = 1;
   });
-}, 1400);
+}, 1600);
