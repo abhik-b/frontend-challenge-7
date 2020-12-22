@@ -21,21 +21,29 @@ body {
   display: grid;
   place-items: center;
   margin-top: 30px;
+  animation: slide-in 0.5s ease-in;
 }
 h2 {
   color: hsl(0, 0%, 59%);
   font-weight: 300;
+  animation: slide-in 0.5s ease-in;
+  animation-delay: 0.4s;
 }
 h2 span {
   font-weight: 900;
   color: hsl(209, 33%, 12%);
   font-weight: 600;
+  animation: slide-in 0.5s ease-in;
+  animation-delay: 0.4s;
 }
 p {
   margin-top: 5px;
   font-size: 17px;
   font-weight: 300;
   color: hsl(209, 33%, 12%);
+
+  animation: scale-up 0.5s ease-in;
+  animation-delay: 0.4s;
 }
 
 .subscribe {
@@ -49,12 +57,14 @@ p {
   margin-top: 30px;
 }
 input {
-  border-radius: 20px;
+  border-radius: 30px;
   height: 50px;
   font-size: 16px;
   border: 1px solid hsl(223, 100%, 88%);
   caret-color: springgreen;
   color: hsl(223, 87%, 63%);
+  animation: scale-up 0.5s ease-in;
+  animation-delay: 0.5s;
 }
 input:focus {
   outline: transparent;
@@ -79,18 +89,21 @@ button {
   cursor: pointer;
   font-size: 18px;
   border: none;
-  border-radius: 20px;
+  border-radius: 30px;
   width: 100%;
   height: 50px;
   background: hsl(223, 87%, 63%);
   color: white;
-  transition: 0.3s;
+  transition: 0.5s;
   box-shadow: 4px 4px 24px hsla(208, 98%, 53%, 0.215);
   outline-color: springgreen;
   font-weight: 700;
+
+  animation: scale-up 0.5s ease-in;
+  animation-delay: 1s;
 }
 button:hover {
-  filter: brightness(120%);
+  filter: brightness(110%) hue-rotate(-35deg);
   transform: scale(1.05);
   box-shadow: 8px 8px 24px hsla(208, 98%, 53%, 0.315);
 }
@@ -102,6 +115,9 @@ footer {
   margin-top: 30px;
   width: 100%;
   padding: 20px;
+
+  animation: slide-in-bottom 0.5s ease;
+  animation-delay: 1s;
 }
 
 .illustration img {
