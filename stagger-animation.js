@@ -26,7 +26,7 @@ setTimeout(() => {
   document.querySelector("input").style.animation = `scale-up 0.5s ease-in`;
   document.querySelector(
     "button"
-  ).style.animation = `scale-up 0.5s ease-in .2s`;
+  ).style.animation = `scale-up 0.5s ease-in .6s`;
 
   document.querySelector("input").style.opacity = 1;
 }, 600);
