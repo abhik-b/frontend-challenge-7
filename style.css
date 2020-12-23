@@ -61,15 +61,15 @@ input {
   border-radius: 30px;
   height: 50px;
   font-size: 16px;
-  border: 1px solid hsl(223, 100%, 88%);
-  caret-color: springgreen;
+  border: 1px solid hsl(223, 87%, 63%);
+  caret-color: hsl(209, 33%, 12%);
   color: hsl(223, 87%, 63%);
   animation: scale-up 0.5s ease-in;
   animation-delay: 0.5s;
 }
 input:focus {
   outline: transparent;
-  border-color: hsl(223, 87%, 63%);
+  border-color: hsl(150, 99%, 35%);
 }
 ::placeholder {
   color: hsl(223, 87%, 63%);
@@ -97,7 +97,7 @@ button {
   color: white;
   transition: 0.5s;
   box-shadow: 4px 4px 24px hsla(208, 98%, 53%, 0.215);
-  outline-color: springgreen;
+  outline-color: hsl(150, 99%, 35%);
   font-weight: 700;
 
   animation: scale-up 0.5s ease-in;
